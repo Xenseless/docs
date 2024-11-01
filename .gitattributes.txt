@@ -1,0 +1,6 @@
+docs/files/extras/jgestures.min.js linguist-generated=false
+docs/files/extras/jquery-ui-1.8.20.custom.min.js linguist-generated=false
+docs/files/extras/jquery.min.1.7.js linguist-generated=false
+docs/files/extras/modernizr.2.5.3.min.js linguist-generated=false
+docs/files/lib/turn.html4.js linguist-generated=false 
+docs/files/lib/turn.html4.min.js linguist-generated=false
