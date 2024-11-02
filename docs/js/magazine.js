@@ -134,54 +134,62 @@ function resizeViewport() {
 	$('.magazine-viewport').css({
 		width: width,
 		height: height
-	}).
-	zoom('resize');
+	}).zoom('resize');
 
+	// Añadido: escala para dispositivos móviles
+	var scaleFactor = (width < 768) ? 0.5 : 1;
 
 	if ($('.magazine').turn('zoom')==1) {
 		var bound = calculateBound({
-			width: options.width,
-			height: options.height,
-			boundWidth: Math.min(options.width, width),
-			boundHeight: Math.min(options.height, height)
+			width: options.width * scaleFactor,
+			height: options.height * scaleFactor,
+			boundWidth: Math.min(options.width * scaleFactor, width),
+			boundHeight: Math.min(options.height * scaleFactor, height)
 		});
 
-		if (bound.width%2!==0)
-			bound.width-=1;
+		if (bound.width % 2 !== 0)
+			bound.width -= 1;
 
-			
-		if (bound.width!=$('.magazine').width() || bound.height!=$('.magazine').height()) {
+		if (bound.width != $('.magazine').width() || bound.height != $('.magazine').height()) {
 
 			$('.magazine').turn('size', bound.width, bound.height);
 
-			if ($('.magazine').turn('page')==1)
+			if ($('.magazine').turn('page') == 1)
 				$('.magazine').turn('peel', 'br');
 
-			$('.next-button').css({height: bound.height, backgroundPosition: '-38px '+(bound.height/2-32/2)+'px'});
-			$('.previous-button').css({height: bound.height, backgroundPosition: '-4px '+(bound.height/2-32/2)+'px'});
+			$('.next-button').css({
+				height: bound.height,
+				backgroundPosition: '-38px ' + (bound.height / 2 - 32 / 2) + 'px'
+			});
+			$('.previous-button').css({
+				height: bound.height,
+				backgroundPosition: '-4px ' + (bound.height / 2 - 32 / 2) + 'px'
+			});
 		}
 
-		$('.magazine').css({top: -bound.height/2, left: -bound.width/2});
+		$('.magazine').css({
+			top: -bound.height / 2,
+			left: -bound.width / 2
+		});
 	}
 
 	var magazineOffset = $('.magazine').offset(),
 		boundH = height - magazineOffset.top - $('.magazine').height(),
 		marginTop = (boundH - $('.thumbnails > div').height()) / 2;
 
-	if (marginTop<0) {
-		$('.thumbnails').css({height:1});
+	if (marginTop < 0) {
+		$('.thumbnails').css({ height: 1 });
 	} else {
-		$('.thumbnails').css({height: boundH});
-		$('.thumbnails > div').css({marginTop: marginTop});
+		$('.thumbnails').css({ height: boundH });
+		$('.thumbnails > div').css({ marginTop: marginTop });
 	}
 
-	if (magazineOffset.top<$('.made').height())
+	if (magazineOffset.top < $('.made').height())
 		$('.made').hide();
 	else
 		$('.made').show();
 
 	$('.magazine').addClass('animated');
-	
 }
 
 
