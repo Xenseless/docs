@@ -16,8 +16,9 @@ body{
 }
 
 .magazine-viewport .magazine{
-	width:922px;
-	height:600px;
+	width:100%;
+	height:auto;
+	max-width: 922px;
 	left:-461px;
 	top:-300px;
 }
