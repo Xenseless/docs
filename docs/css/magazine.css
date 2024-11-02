@@ -9,30 +9,25 @@ body{
 	position:absolute;
 	top:50%;
 	left:50%;
-	width:100%;
-	max-width: 922px; /* límite para pantallas grandes */
-	height:auto;
-	 transform: translate(-50%, -50%);
+	width:922px;
+	height:600px;
+	margin:auto;
 }
 
-.magazine-viewport .magazine {
-    width: 100%;
-    height: auto;
-    max-width: 922px;
+.magazine-viewport .magazine{
+	width:922px;
+	height:600px;
+	left:-461px;
+	top:-300px;
 }
 
-.magazine-viewport .page {
-    width: 100%;
-    height: auto;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover;
+.magazine-viewport .page{
+	width:461px;
+	height:600px;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 }
-
-@media (max-width: 768px) {
-    .magazine-viewport .container {
-        width: 90%; /* Ajusta el porcentaje según lo necesario */
-    }
 
 .magazine .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
