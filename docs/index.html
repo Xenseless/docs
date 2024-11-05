@@ -6,6 +6,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
 <meta name="viewport" content="width = 1050, user-scalable = no" />
+<title>Slipknot Magazine</title>
 <script type="text/javascript" src="extras/jquery.min.1.7.js"></script> 
 <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script> 
 <script type="text/javascript" src="lib/hash.js"></script>
@@ -42,6 +43,15 @@ function loadApp() {
 		setTimeout(loadApp, 10);
 		return;
 	}
+
+	   // Function to set flipbook dimensions based on window width
+    function setFlipbookSize() {
+        const isMobile = window.innerWidth <= 780;
+        const width = isMobile ? 360 : 922;
+        const height = isMobile ? 220 : 600;
+
+        flipbook.turn('size', width, height);  // Adjust flipbook size dynamically
+    }
 	
 	// Create the flipbook
 
