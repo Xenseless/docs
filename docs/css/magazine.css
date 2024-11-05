@@ -9,16 +9,16 @@ body{
 	position:absolute;
 	top:50%;
 	left:50%;
-	width:922px;
-	height:600px;
+	width:576px;
+	height:375px;
 	margin:auto;
 }
 
 .magazine-viewport .magazine{
-	width:922px;
-	height:600px;
-	left:-461px;
-	top:-300px;
+	width:576px;
+	height:375px;
+	left:-288px;
+	top:-187px;
 }
 
 .magazine-viewport .page{
