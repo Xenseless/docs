@@ -30,21 +30,25 @@ body{
 }
 
 /* Dimensiones para dispositivos móviles */
-@media (max-width: 360px) {
+@media (max-width: 767px) {
     .magazine-viewport .container {
         width: 360px;
         height: 220px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centra el flipbook */
     }
 
     .magazine-viewport .magazine {
         width: 360px;
         height: 220px;
-	left:-144px;
-	top:-187px;
+	left:0px;
+	top:0px;
     }
 
     .magazine-viewport .page {
-        width: 360px;
+        width: 180px;
         height: 220px;
     }
 }
