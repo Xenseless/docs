@@ -30,7 +30,7 @@ body{
 }
 
 /* Dimensiones para dispositivos móviles */
-@media (max-width: 767px) {
+@media (max-width: 360px) {
     .magazine-viewport .container {
         width: 360px;
         height: 220px;
@@ -39,12 +39,12 @@ body{
     .magazine-viewport .magazine {
         width: 360px;
         height: 220px;
-        left: -180px;
-        top: -110px;
+	left:-144px;
+	top:-187px;
     }
 
     .magazine-viewport .page {
-        width: 180px;
+        width: 360px;
         height: 220px;
     }
 }
