@@ -1,57 +1,38 @@
-body {
-    overflow: hidden;
-    background-color: #171717;
-    margin: 0;
-    padding: 0;
+body{
+	overflow:hidden;
+	background-color:#171717;
+	margin:0;
+	padding:0;
 }
 
-.magazine-viewport .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 922px;
-    height: 600px;
-    margin: auto;
-    transform: translate(-50%, -50%);
+.magazine-viewport .container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	width:922px;
+	height:600px;
+	margin:auto;
 }
 
-.magazine-viewport .magazine {
-    width: 922px;
-    height: 600px;
-    left: -461px;
-    top: -300px;
+.magazine-viewport .magazine{
+	width:922px;
+	height:600px;
+	left:-461px;
+	top:-300px;
 }
 
-.magazine-viewport .page {
-    width: 461px;
-    height: 600px;
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+.magazine-viewport .page{
+	width:461px;
+	height:600px;
+	background-color:white;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
 }
 
-.magazine .page {
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.magazine-viewport .page img {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin: 0;
-}
-
-/* Media query for screens 780px wide or less (for mobile) */
-@media (max-width: 780px) {
+/* Dimensiones para dispositivos móviles */
+@media (max-width: 680px) {
     .magazine-viewport .container {
-        width: 360px; /* Adjusted for smaller screens */
+        width: 360px;
         height: 220px;
     }
 
@@ -66,4 +47,22 @@ body {
         width: 180px;
         height: 220px;
     }
+}
+
+.magazine .page{
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-ms-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	-o-box-shadow:0 0 20px rgba(0,0,0,0.2);
+	box-shadow:0 0 20px rgba(0,0,0,0.2);
+}
+
+.magazine-viewport .page img{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin:0;
 }
