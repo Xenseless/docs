@@ -22,30 +22,28 @@ body{
 }
 
 .magazine-viewport .page{
-	width:288px;
-	height:216px;
+	width:360px;
+	height:220px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
 }
 
 /* Dimensiones para dispositivos móviles */
-@media (max-width: 767px) {
+@media (max-width: 680px) {
     .magazine-viewport .container {
-        width: 288px;
-        height: 216px;
+        width: 360px;
+        height: 220px;
     }
 
     .magazine-viewport .magazine {
-        width: 288px;
-        height: 216px;
-        left: -144px;
-        top: -187.5px;
+        width: 360px;
+        height: 220px;
     }
 
     .magazine-viewport .page {
-        width: 144px;
-        height: 375px;
+        width: 360px;
+        height: 220px;
     }
 }
 
