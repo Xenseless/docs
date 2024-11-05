@@ -15,15 +15,15 @@ body{
 }
 
 .magazine-viewport .magazine{
-	width:576px;
-	height:375px;
+	width:922px;
+	height:600px;
 	left:-288px;
 	top:-187px;
 }
 
 .magazine-viewport .page{
-	width:288px;
-	height:375px;
+	width:461px;
+	height:600px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
