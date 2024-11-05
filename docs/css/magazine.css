@@ -22,15 +22,15 @@ body{
 }
 
 .magazine-viewport .page{
-	width:461px;
-	height:600px;
+	width:360px;
+	height:220px;
 	background-color:white;
 	background-repeat:no-repeat;
 	background-size:100% 100%;
 }
 
 /* Dimensiones para dispositivos móviles */
-@media (max-width: 680px) {
+@media (max-width: 767px) {
     .magazine-viewport .container {
         width: 360px;
         height: 220px;
