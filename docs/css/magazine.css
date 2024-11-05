@@ -39,6 +39,7 @@ body{
     .magazine-viewport .magazine {
         width: 360px;
         height: 220px;
+	left:-521px;
     }
 
     .magazine-viewport .page {
