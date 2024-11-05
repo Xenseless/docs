@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width = 1050, user-scalable = no" />
     <title>Responsive Flipbook</title>
 
     <script type="text/javascript" src="extras/jquery.min.1.7.js"></script> 
@@ -37,8 +37,8 @@ function loadApp() {
     // Function to set flipbook dimensions based on window width
     function setFlipbookSize() {
         const isMobile = window.innerWidth <= 780;
-        const width = isMobile ? 288 : 922;
-        const height = isMobile ? 216 : 600;
+        const width = isMobile ? 460 : 922;
+        const height = isMobile ? 345 : 600;
 
         flipbook.turn('size', width, height);  // Adjust flipbook size dynamically
     }
