@@ -39,7 +39,8 @@ body{
     .magazine-viewport .magazine {
         width: 360px;
         height: 220px;
-	left:-521px;
+	left:-461px;
+	top:-300px;
     }
 
     .magazine-viewport .page {
