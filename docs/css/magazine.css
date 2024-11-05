@@ -29,30 +29,6 @@ body{
 	background-size:100% 100%;
 }
 
-/* Dimensiones para dispositivos móviles */
-@media (max-width: 360px) {
-    .magazine-viewport .container {
-	position:absolute;
-	top:50%;
-	left:50%;
-	width:360px;
-	height:220px;
-	margin:auto;
-}
-
-    .magazine-viewport .magazine {
-        width: 360px;
-        height: 220px;
-	left:auto;
-	top:auto;
-    }
-
-    .magazine-viewport .page {
-        width: 360px;
-        height: 220px;
-    }
-}
-
 .magazine .page{
 	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.2);
 	-moz-box-shadow:0 0 20px rgba(0,0,0,0.2);
