@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0">
-    <title>Slipknot Magazine</title>
+    <title>Review Artist/Designers</title>
 
     <script type="text/javascript" src="extras/jquery.min.1.7.js"></script> 
     <script type="text/javascript" src="extras/modernizr.2.5.3.min.js"></script> 
@@ -35,10 +35,19 @@ function loadApp() {
     }
 
     // Function to set flipbook dimensions based on window width
-    function setFlipbookSize() {
-        const isMobile = window.innerWidth <= 780;
-        const width = isMobile ? 360 : 922;
-        const height = isMobile ? 220 : 600;
+function setFlipbookSize() {
+    let width, height;
+    
+    if (window.innerWidth <= 375) {   // Para dispositivos con ancho <= 375px
+        width = 320;
+        height = 200;
+    } else if (window.innerWidth <= 680) { // Para dispositivos entre 415px y 680px de ancho
+        width = 360;
+        height = 220;
+    } else { // Para dispositivos más grandes
+        width = 922;
+        height = 600;
+    }
 
         flipbook.turn('size', width, height);  // Adjust flipbook size dynamically
     }
@@ -52,7 +61,7 @@ function loadApp() {
         gradients: true,
         autoCenter: true,
         elevation: 50,
-        pages: 20,
+        pages: 18,
         when: {
             turning: function(event, page, view) {
                 var book = $(this),
